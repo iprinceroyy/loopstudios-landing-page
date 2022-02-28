@@ -14,12 +14,23 @@ $white: hsl(0,
 $black: hsl(0,
 0%,
 0%);
-$dark-Gray: hsl(0,
+$dark-gray: hsl(0,
 0%,
 55%);
-$very-dark-Gray: hsl(0,
+$very-dark-gray: hsl(0,
 0%,
 41%);
+
+/* main */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
