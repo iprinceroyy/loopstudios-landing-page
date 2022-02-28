@@ -21,15 +21,14 @@ $very-dark-gray: hsl(0,
 0%,
 41%);
 
-/* main */
+/* font family*/
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+$font-alata: 'Alata',
+sans-serif;
+$font-josefin: 'Josefin Sans',
+sans-serif;
+
+/* main */
 
 .attribution {
     font-size: 11px;
