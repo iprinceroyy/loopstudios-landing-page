@@ -1,0 +1,11 @@
+header {
+    position: relative;
+    background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
