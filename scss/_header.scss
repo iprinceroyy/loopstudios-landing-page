@@ -1,3 +1,5 @@
+@import '_variables';
+
 /*header {
     background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
     background-size: cover;
@@ -16,18 +18,22 @@
 
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.navbar-item a {
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
+    background: #000;
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #fff;
+        font-family: $font-josefin;
+        font-weight: $font-400;
+    }
 }
