@@ -25,15 +25,45 @@
     flex-direction: column;
     justify-content: center;
     background: #000;
-    ul {
-        list-style-type: none;
+    @media(min-width: 380px) {
+        flex-direction: row;
     }
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 2.5rem;
-        color: #fff;
-        font-family: $font-josefin;
-        font-weight: $font-400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem 0;
+    @media(min-width: 1020px) {
+        display: inline-block;
+        margin: 1rem;
     }
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    font-family: $font-josefin;
+    font-weight: $font-400;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin: -0.3rem 0 0;
+    background: rgba(white, 0.3);
+    transition: all 0.3s;
+}
+
+a:hover::before {
+    height: 110%;
 }
