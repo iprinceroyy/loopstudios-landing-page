@@ -37,6 +37,10 @@
   z-index: 2;
   color: #fff;
 }
+#toggler:focus {
+  outline: none;
+  background: none;
+}
 @media (min-width: 1020px) {
   #toggler {
     display: none;
