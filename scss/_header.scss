@@ -31,7 +31,16 @@
 }
 
 .fa-times {
-    animation-name: rotate;
+    animation: rotate 1s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 .navbar {
