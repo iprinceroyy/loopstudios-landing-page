@@ -112,7 +112,8 @@ a::before {
   transition: all 0.3s;
 }
 
-a:hover::before {
+a:hover::before,
+a.active::before {
   height: 110%;
 }
 
