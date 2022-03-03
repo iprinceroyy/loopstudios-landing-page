@@ -10,14 +10,25 @@
     flex-direction: row;
     justify-content: space-between;
     .logo {
+        background: pink;
         margin: 1.5rem;
         position: relative;
         z-index: 1;
     }
 }
 
+.nav-toggler {
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 .navbar {
     position: fixed;
+    top: 0;
+    left: -110%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -49,7 +60,6 @@ a {
     font-family: $font-josefin;
     font-weight: $font-400;
     position: relative;
-    z-index: 0;
     cursor: pointer;
 }
 
