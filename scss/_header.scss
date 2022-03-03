@@ -17,19 +17,22 @@
     }
 }
 
-.nav-toggler {
+#toggler {
     position: fixed;
     top: 1.2rem;
     right: 1.5rem;
-    padding: 0.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    color: green;
     z-index: 2;
     @media (min-width: 1020px) {
         display: none;
     }
 }
 
-.nav-toggler::before {}
+.fa-times {
+    animation-name: rotate;
+}
 
 .navbar {
     position: fixed;
@@ -47,7 +50,7 @@
     }
 }
 
-.show {
+nav.show {
     left: 0;
 }
 
