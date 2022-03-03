@@ -1,4 +1,4 @@
-@import '_variables';
+@import "_variables";
 
 /*header {
     background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
@@ -18,12 +18,18 @@
 }
 
 .nav-toggler {
-    position: relative;
-    top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    padding: 0.5rem;
     cursor: pointer;
+    z-index: 2;
+    @media (min-width: 1020px) {
+        display: none;
+    }
 }
+
+.nav-toggler::before {}
 
 .navbar {
     position: fixed;
@@ -35,9 +41,14 @@
     flex-direction: column;
     align-items: center;
     background: #000;
-    @media(min-width: 380px) {
+    transition: all .3s;
+    @media (min-width: 380px) {
         flex-direction: row;
     }
+}
+
+.show {
+    left: 0;
 }
 
 ul {
@@ -46,7 +57,7 @@ ul {
 
 li {
     padding: 1rem 0;
-    @media(min-width: 1020px) {
+    @media (min-width: 1020px) {
         display: inline-block;
         margin: 1rem;
     }
