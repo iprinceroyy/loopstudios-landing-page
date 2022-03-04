@@ -16,16 +16,34 @@
   background-size: cover;
   height: 100vh;
 }
+@media (min-width: 1020px) {
+  .container {
+    background: url("../assets/images/desktop/image-hero.jpg") no-repeat;
+    background-size: cover;
+    padding: 1rem 10rem;
+  }
+}
 
 .page-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-.page-header .logo {
+@media (min-width: 1020px) {
+  .page-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.logo {
   margin: 1.5rem;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 1020px) {
+  .logo {
+    z-index: 0;
+  }
 }
 
 #toggler {
@@ -35,7 +53,7 @@
   font-size: 2rem;
   cursor: pointer;
   z-index: 2;
-  color: #fff;
+  color: white;
 }
 #toggler:focus {
   outline: none;
@@ -67,13 +85,19 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #000;
+  background: black;
   transition: all 0.3s;
 }
-@media (min-width: 380px) {
+@media (min-width: 1020px) {
   .navbar {
-    flex-direction: row;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: auto;
+    background: transparent;
   }
 }
 
@@ -83,6 +107,12 @@ nav.show {
 
 ul {
   list-style-type: none;
+  padding: 10rem 1.5rem;
+}
+@media (min-width: 1020px) {
+  ul {
+    padding: 0;
+  }
 }
 
 li {
@@ -91,7 +121,7 @@ li {
 @media (min-width: 1020px) {
   li {
     display: inline-block;
-    margin: 1rem;
+    margin: 0 1rem;
   }
 }
 
@@ -99,11 +129,20 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
-  color: #fff;
+  color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   position: relative;
   cursor: pointer;
+}
+@media (min-width: 1020px) {
+  a {
+    font-size: 1rem;
+    color: white;
+    font-family: "Alata", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
 }
 
 a::before {
@@ -115,16 +154,51 @@ a::before {
   background: rgba(255, 255, 255, 0.3);
   transition: all 0.3s;
 }
+@media (min-width: 1020px) {
+  a::before a::after {
+    content: "";
+    border: 1px solid;
+    transition: all 0.3s;
+  }
+}
 
 a:hover::before,
 a.active::before {
   height: 110%;
 }
-
 /* title */
 div.title {
-  border: 4px solid white;
-  margin: 7rem 2rem;
+  border: 3px solid white;
+  margin: 10rem 1.5rem 7rem;
+  padding: 2rem;
+  animation: line 3s ease-in;
+  animation-fill-mode: none;
+}
+
+@keyframes line {
+  0% {
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+  25% {
+    border-top-color: #00ffaa;
+  }
+  50% {
+    border-right-color: #00ffaa;
+  }
+  75% {
+    border-bottom-color: #00ffaa;
+  }
+  100% {
+    border-left-color: #00ffaa;
+  }
+}
+.title > h1 {
+  font-size: 3.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
 }
 
 .attribution {

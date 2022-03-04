@@ -6,3 +6,9 @@ btn.addEventListener("click", () => {
     icon.classList.toggle("fa-times");
     navBar.classList.toggle("show");
 });
+
+const windowSize = document.querySelector("window");
+if (windowSize > 1020) {
+    navBar.classList.remove("show");
+    console.log(navBar.classList);
+}
