@@ -51,6 +51,7 @@
   top: 1.2rem;
   right: 1.5rem;
   font-size: 2rem;
+  background: transparent;
   cursor: pointer;
   z-index: 2;
   color: white;
@@ -155,10 +156,8 @@ a::before {
   transition: all 0.3s;
 }
 @media (min-width: 1020px) {
-  a::before a::after {
-    content: "";
-    border: 1px solid;
-    transition: all 0.3s;
+  a::before {
+    content: none;
   }
 }
 
@@ -166,6 +165,14 @@ a:hover::before,
 a.active::before {
   height: 110%;
 }
+@media (min-width: 1020px) {
+  a:hover::before,
+a.active::before {
+    height: 0;
+    border-bottom: 2px solid white;
+  }
+}
+
 /* title */
 div.title {
   border: 3px solid white;
@@ -177,7 +184,7 @@ div.title {
 }
 @media (min-width: 1020px) {
   div.title {
-    width: 50%;
+    width: 55%;
   }
 }
 

@@ -39,6 +39,7 @@
     top: 1.2rem;
     right: 1.5rem;
     font-size: 2rem;
+    background: transparent;
     cursor: pointer;
     z-index: 2;
     color: $white;
@@ -133,18 +134,17 @@ a::before {
     background: rgba($white, 0.3);
     transition: all 0.3s;
     @media (min-width: 1020px) {
-        a::after {
-            content: "";
-            border: 1px solid;
-            transition: all 0.3s;
-        }
+        content: none;
     }
 }
 
 a:hover::before,
 a.active::before {
     height: 110%;
-    @media(min-width: 1020px) {}
+    @media (min-width: 1020px) {
+        height: 0;
+        border-bottom: 2px solid $white;
+    }
 }
 
 
@@ -158,7 +158,7 @@ div.title {
     animation: line 3s ease-in;
     animation-fill-mode: none;
     @media (min-width: 1020px) {
-        width: 50%;
+        width: 55%;
     }
 }
 
