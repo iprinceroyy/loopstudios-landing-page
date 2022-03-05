@@ -10,43 +10,42 @@
 .container {
   background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
 @media (min-width: 992px) {
   .container {
     background: url("../assets/images/desktop/image-hero.jpg") no-repeat;
     background-size: cover;
-    background-position: center;
     padding: 1.5rem 10rem;
   }
 }
 
 .page-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem;
+  position: relative;
 }
 @media (min-width: 992px) {
   .page-header {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .logo {
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 @media (min-width: 992px) {
   .logo {
     z-index: 0;
-    margin: 2rem 0;
   }
 }
 
 #toggler {
-  position: relative;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
   font-size: 2rem;
   background: transparent;
   cursor: pointer;
@@ -81,8 +80,6 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
   background: black;
   transition: all 0.3s;
@@ -90,8 +87,12 @@
 @media (min-width: 992px) {
   .navbar {
     position: relative;
-    left: 0rem;
-    align-items: flex-end;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: auto;
     background: transparent;
   }
 }
@@ -178,12 +179,12 @@ div.title {
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   div.title {
-    width: 57%;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
   div.title {
-    width: 50%;
+    width: 55%;
   }
 }
 
