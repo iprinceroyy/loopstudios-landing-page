@@ -5,6 +5,13 @@
 /* Global Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+/********************
+*   scss variables  *
+*********************/
+/* Primary colors */
+/* Global Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 /* font family*/
 /* font weight */
 .container {
@@ -213,8 +220,30 @@ div.title {
   text-transform: uppercase;
 }
 
+/* font family*/
+/* font weight */
 .main-container {
-  padding: 1.5rem;
+  padding: 5rem 1.5rem;
+}
+
+/* headings */
+h2 {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about div:nth-of-type(2) {
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
 }
 
 .attribution {
