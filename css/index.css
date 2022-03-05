@@ -1,309 +1,267 @@
 /********************
 *   scss variables  *
 *********************/
-
-
 /* Primary colors */
-
-
 /* Global Fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-
 /********************
 *   scss variables  *
 *********************/
-
-
 /* Primary colors */
-
-
 /* Global Fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-
 /* font family*/
-
-
 /* font weight */
-
 .container {
-    background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
+  background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+@media (min-width: 992px) {
+  .container {
+    background: url("../assets/images/desktop/image-hero.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-}
-
-@media (min-width: 992px) {
-    .container {
-        background: url("../assets/images/desktop/image-hero.jpg") no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 1.5rem 10rem;
-    }
+    padding: 1.5rem 10rem;
+  }
 }
 
 .page-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
 }
-
 @media (min-width: 992px) {
-    .page-header {
-        flex-direction: row;
-    }
+  .page-header {
+    flex-direction: row;
+  }
 }
 
 .logo {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
-
 @media (min-width: 992px) {
-    .logo {
-        z-index: 0;
-        margin: 2rem 0;
-    }
+  .logo {
+    z-index: 0;
+    margin: 2rem 0;
+  }
 }
 
 #toggler {
-    position: relative;
-    font-size: 2rem;
-    background: transparent;
-    cursor: pointer;
-    color: white;
+  position: relative;
+  font-size: 2rem;
+  background: transparent;
+  cursor: pointer;
+  color: white;
 }
-
 #toggler:focus {
-    outline: none;
-    background: none;
+  outline: none;
+  background: none;
 }
-
 @media (min-width: 992px) {
-    #toggler {
-        display: none;
-    }
+  #toggler {
+    display: none;
+  }
 }
 
 .fa-times {
-    animation: rotate 1s ease;
+  animation: rotate 1s ease;
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(180deg);
-    }
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }
-
 .navbar {
-    position: fixed;
-    top: 0;
-    left: -110%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    background: black;
-    transition: all 0.3s;
+  position: fixed;
+  top: 0;
+  left: -110%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: black;
+  transition: all 0.3s;
 }
-
 @media (min-width: 992px) {
-    .navbar {
-        position: relative;
-        left: 0rem;
-        align-items: flex-end;
-        background: transparent;
-    }
+  .navbar {
+    position: relative;
+    left: 0rem;
+    align-items: flex-end;
+    background: transparent;
+  }
 }
 
 nav.show {
-    left: 0;
+  left: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 10rem 1.5rem;
+  list-style-type: none;
+  padding: 10rem 1.5rem;
 }
-
 @media (min-width: 992px) {
-    ul {
-        padding: 0;
-    }
+  ul {
+    padding: 0;
+  }
 }
 
 li {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
-
 @media (min-width: 992px) {
-    li {
-        display: inline-block;
-        margin: 0 1rem;
-    }
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
 
 a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: white;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    position: relative;
-    cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
 }
-
 @media (min-width: 992px) {
-    a {
-        font-size: 1rem;
-        color: white;
-        font-family: "Alata", sans-serif;
-        text-transform: capitalize;
-        font-weight: 400;
-    }
+  a {
+    font-size: 1rem;
+    color: white;
+    font-family: "Alata", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
 }
 
 a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    margin: -0.3rem 0 0;
-    background: rgba(255, 255, 255, 0.3);
-    transition: all 0.3s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  margin: -0.3rem 0 0;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
 }
-
 @media (min-width: 992px) {
-    a::before {
-        content: none;
-    }
+  a::before {
+    content: none;
+  }
 }
 
 a:hover::before,
 a.active::before {
-    height: 110%;
+  height: 110%;
 }
-
 @media (min-width: 992px) {
-    a:hover::before,
-    a.active::before {
-        height: 0;
-        border-bottom: 2px solid white;
-    }
+  a:hover::before,
+a.active::before {
+    height: 0;
+    border-bottom: 2px solid white;
+  }
 }
-
 
 /* title */
-
 div.title {
-    border: 3px solid white;
-    margin: 10rem 1.5rem 7rem;
-    width: 90%;
-    padding: 2rem;
-    animation: line 3s ease-in;
-    animation-fill-mode: none;
+  border: 3px solid white;
+  margin: 10rem 1.5rem 7rem;
+  padding: 2rem;
+  animation: line 3s ease-in;
+  animation-fill-mode: none;
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-    div.title {
-        width: 57%;
-    }
+  div.title {
+    width: 57%;
+  }
 }
-
 @media (min-width: 992px) {
-    div.title {
-        width: 50%;
-    }
+  div.title {
+    width: 50%;
+  }
 }
 
 @keyframes line {
-    0% {
-        border-top-color: white;
-        border-bottom-color: white;
-    }
-    25% {
-        border-top-color: black;
-    }
-    50% {
-        border-right-color: black;
-    }
-    75% {
-        border-bottom-color: #00ffaa;
-    }
-    100% {
-        border-left-color: #00ffaa;
-    }
+  0% {
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+  25% {
+    border-top-color: black;
+  }
+  50% {
+    border-right-color: black;
+  }
+  75% {
+    border-bottom-color: #00ffaa;
+  }
+  100% {
+    border-left-color: #00ffaa;
+  }
 }
-
-.title>h1 {
-    font-size: 3.5rem;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    color: white;
-    text-transform: uppercase;
+.title > h1 {
+  font-size: 3.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
 }
-
 
 /* font family*/
-
-
 /* font weight */
-
 .main-container {
-    padding: 5rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
-
 
 /* headings */
-
 h2 {
-    font-size: 2.6rem;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
+  font-size: 2.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-
 /* paragraphs */
-
 p {
-    font-size: 1.2rem;
-    font-family: "Alata", sans-serif;
-    font-weight: 400;
-    color: #8c8c8c;
-    line-height: 1.5;
-    margin: 1rem;
-    align-self: auto;
+  font-size: 1.2rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: #8c8c8c;
+  line-height: 1.5;
+  margin: 1rem;
+  align-self: auto;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about div:nth-of-type(2) {
-    padding: 3.5rem 1.5rem;
-    text-align: center;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: #3e52a3;
+  color: #3e52a3;
 }
-
 
 /*# sourceMappingURL=index.css.map */
