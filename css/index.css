@@ -18,7 +18,7 @@
   background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 95vh;
 }
 @media (min-width: 992px) {
   .container {
@@ -177,8 +177,8 @@ a.active::before {
 /* title */
 div.title {
   border: 3px solid white;
-  margin: 10rem 1.5rem 7rem;
-  padding: 2rem 4rem 2rem 2rem;
+  margin: 10rem 1.5rem;
+  padding: 2rem 4.5rem 2rem 2rem;
   animation: line 3s ease-in;
   animation-fill-mode: none;
 }
