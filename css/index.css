@@ -228,10 +228,21 @@ div.title {
 
 /* headings */
 h2 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+/* paragraphs */
+p {
+  font-size: 1.2rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: #8c8c8c;
+  line-height: 1.5;
+  margin: 1rem;
+  align-self: auto;
 }
 
 .about {
@@ -241,8 +252,7 @@ h2 {
 }
 
 .about div:nth-of-type(2) {
-  margin: 2rem 0;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
