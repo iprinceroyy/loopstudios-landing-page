@@ -241,7 +241,7 @@ p {
   color: #8c8c8c;
   line-height: 1.5;
   margin: 1rem;
-  align-self: auto;
+  align-self: center;
 }
 
 .about {
@@ -251,7 +251,7 @@ p {
 }
 
 .about div:nth-of-type(2) {
-  padding: 3.5rem 1rem;
+  padding: 3.5rem 0.8rem;
   text-align: center;
 }
 
