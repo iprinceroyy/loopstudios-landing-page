@@ -224,6 +224,11 @@ div.title {
 .main-container {
   padding: 5rem 1.5rem;
 }
+@media (min-width: 992px) {
+  .main-container {
+    padding: 6rem 11.5rem;
+  }
+}
 
 /* headings */
 h2 {
@@ -231,6 +236,12 @@ h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  h2 {
+    margin: 0 2rem 1rem;
+    text-align: center;
+  }
 }
 
 /* paragraphs */
@@ -243,16 +254,64 @@ p {
   margin: 1rem 0;
   align-self: center;
 }
+@media (min-width: 992px) {
+  p {
+    margin: 0;
+  }
+}
 
 .about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 992px) {
+  .about {
+    flex-direction: row;
+  }
+}
+
+.mobile-img {
+  display: block;
+}
+@media (min-width: 992px) {
+  .mobile-img {
+    display: none;
+  }
+}
+
+.desktop-img {
+  display: none;
+}
+@media (min-width: 992px) {
+  .desktop-img {
+    display: block;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .about div:nth-of-type(1) {
+    flex-basis: 100%;
+  }
+}
 
 .about div:nth-of-type(2) {
   padding: 3.5rem 1.4rem;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .about div:nth-of-type(2) {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    flex-basis: 70%;
+    margin: 6rem 0 0;
+    padding: 4rem 3.5rem 0;
+    background: pink;
+    text-align: start;
+  }
 }
 
 .attribution {

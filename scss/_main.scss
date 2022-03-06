@@ -1,6 +1,9 @@
 @import 'variables';
 .main-container {
     padding: 5rem 1.5rem;
+    @media (min-width: 992px) {
+        padding: 6rem 11.5rem;
+    }
 }
 
 
@@ -11,6 +14,10 @@ h2 {
     font-family: $font-josefin;
     font-weight: $font-300;
     text-transform: uppercase;
+    @media (min-width: 992px) {
+        margin: 0 2rem 1rem;
+        text-align: center;
+    }
 }
 
 
@@ -24,15 +31,53 @@ p {
     line-height: 1.5;
     margin: 1rem 0;
     align-self: center;
+    @media (min-width: 992px) {
+        margin: 0;
+    }
 }
 
 .about {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+}
+
+.mobile-img {
+    display: block;
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.desktop-img {
+    display: none;
+    @media (min-width: 992px) {
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+.about div:nth-of-type(1) {
+    @media (min-width: 992px) {
+        flex-basis: 100%;
+    }
 }
 
 .about div:nth-of-type(2) {
     padding: 3.5rem 1.4rem;
     text-align: center;
+    @media (min-width: 992px) {
+        position: relative;
+        z-index: 2;
+        padding: 0;
+        flex-basis: 70%;
+        margin: 6rem 0 0;
+        padding: 4rem 3.5rem 0;
+        background: pink;
+        text-align: start;
+    }
 }
