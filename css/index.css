@@ -345,6 +345,7 @@ p {
   font-weight: 300;
   color: white;
   text-transform: uppercase;
+  opacity: 0.9;
 }
 
 .creation span {
