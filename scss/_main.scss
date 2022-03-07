@@ -85,7 +85,7 @@ p {
 .products .creation {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 0 0;
+    margin: 4rem 0;
     gap: 2rem;
     @media (min-width: 992px) {
         flex-direction: row;
@@ -127,8 +127,8 @@ p {
     letter-spacing: 4px;
     text-transform: uppercase;
     text-decoration: none;
-    align-content: center;
     border: 2px solid;
+    margin: 0 6.95rem;
     padding: 1rem 4rem;
     @media (min-width: 992px) {
         position: absolute;
