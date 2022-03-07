@@ -338,6 +338,16 @@ p {
   position: relative;
 }
 
+.creation div:hover picture,
+.creation div:active picture {
+  opacity: 0.3;
+}
+
+.creation div:hover h3,
+.creation div:active h3 {
+  color: black;
+}
+
 .creation div h3 {
   position: absolute;
   top: 4rem;

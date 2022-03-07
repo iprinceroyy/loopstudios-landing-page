@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 .main-container {
     padding: 5rem 1.5rem 0;
     @media (min-width: 992px) {
@@ -97,6 +97,16 @@ p {
 
 .creation div {
     position: relative;
+}
+
+.creation div:hover picture,
+.creation div:active picture {
+    opacity: 0.3;
+}
+
+.creation div:hover h3,
+.creation div:active h3 {
+    color: black;
 }
 
 .creation div h3 {
