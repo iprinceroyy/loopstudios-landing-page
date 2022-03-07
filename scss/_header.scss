@@ -3,7 +3,7 @@
     background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 95vh;
+    padding: 0 0 2rem;
     @media (min-width: 992px) {
         background: url("../assets/images/desktop/image-hero.jpg") no-repeat;
         background-size: cover;
@@ -126,7 +126,12 @@ nav.show {
     background: rgba($white, 0.3);
     transition: all 0.3s;
     @media (min-width: 992px) {
-        content: none;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        margin: 1.5rem 0.6rem;
+        background: $white;
     }
 }
 
@@ -135,7 +140,7 @@ nav.show {
     height: 110%;
     @media (min-width: 992px) {
         height: 0;
-        border-bottom: 2px solid $white;
+        width: 70%;
     }
 }
 
