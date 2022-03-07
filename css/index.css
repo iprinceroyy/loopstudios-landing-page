@@ -361,7 +361,7 @@ p {
   letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid;
+  border: 2.5px solid dimgray;
   margin: 0 5rem;
   padding: 1rem 4rem;
 }
