@@ -81,3 +81,43 @@ p {
         text-align: start;
     }
 }
+
+
+/* products */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+.products>h2 {
+    text-align: center;
+}
+
+.products .creation {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0 0;
+    gap: 2rem;
+}
+
+.creation div {
+    position: relative;
+}
+
+.creation div h3 {
+    position: absolute;
+    top: 5.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    font-family: $font-josefin;
+    font-weight: $font-300;
+    color: $white;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.creation span {
+    display: block;
+}
