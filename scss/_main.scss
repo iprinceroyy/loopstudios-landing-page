@@ -15,8 +15,8 @@ h2 {
     font-weight: $font-300;
     text-transform: uppercase;
     @media (min-width: 992px) {
-        margin: 0 2rem 1rem;
-        text-align: center;
+        margin: 0 0 1rem;
+        font-size: 3rem;
     }
 }
 
@@ -33,6 +33,7 @@ p {
     align-self: center;
     @media (min-width: 992px) {
         margin: 0;
+        font-size: 1rem;
     }
 }
 
@@ -46,38 +47,17 @@ p {
     }
 }
 
-.mobile-img {
-    display: block;
-    @media (min-width: 992px) {
-        display: none;
-    }
-}
-
-.desktop-img {
-    display: none;
-    @media (min-width: 992px) {
-        display: block;
-        position: relative;
-        z-index: -1;
-    }
-}
-
-.about div:nth-of-type(1) {
-    @media (min-width: 992px) {
-        flex-basis: 90%;
-    }
-}
-
 .about div:nth-of-type(2) {
     padding: 3.5rem 1.4rem 0;
     text-align: center;
     @media (min-width: 992px) {
         background: $white;
         position: absolute;
-        padding: 0;
         left: 36rem;
+        bottom: 0;
+        z-index: 1;
         align-self: flex-end;
-        padding: 4rem 0 0 3.5rem;
+        padding: 6rem 0 0 6rem;
         text-align: start;
     }
 }
@@ -86,13 +66,20 @@ p {
 /* products */
 
 .products {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     margin: 5rem 0;
+    @media (min-width: 992px) {
+        margin: 8rem 0 0;
+    }
 }
 
 .products>h2 {
     text-align: center;
+    @media (min-width: 992px) {
+        text-align: left;
+        margin: 0;
+        font-size: 3rem;
+    }
 }
 
 .products .creation {
@@ -100,6 +87,12 @@ p {
     flex-wrap: wrap;
     padding: 3rem 0 0;
     gap: 2rem;
+    @media (min-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+    }
 }
 
 .creation div {
@@ -115,7 +108,11 @@ p {
     font-weight: $font-300;
     color: $white;
     text-transform: uppercase;
-    opacity: 0.9;
+    z-index: 2;
+    @media (min-width: 992px) {
+        top: 23rem;
+        left: 2rem;
+    }
 }
 
 .creation span {
@@ -130,10 +127,14 @@ p {
     letter-spacing: 4px;
     text-transform: uppercase;
     text-decoration: none;
-    align-self: center;
+    align-content: center;
     border: 2px solid;
-    margin: 2.5rem 0;
     padding: 1rem 4rem;
+    @media (min-width: 992px) {
+        position: absolute;
+        top: -1rem;
+        right: 0;
+    }
 }
 
 .creation+a:hover {
