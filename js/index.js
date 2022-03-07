@@ -10,4 +10,4 @@ btn.addEventListener("click", () => {
 // copyrights
 const copyright = document.querySelector(".copyright");
 const date = new Date().getFullYear();
-copyright.innerHTML = `<p style="text-align:center">ⓒ${date} Loopstudios. All rights reserved</p>`;
+copyright.innerHTML = `<p style="margin: 0 0 0;">ⓒ${date} Loopstudios. All rights reserved</p>`;
