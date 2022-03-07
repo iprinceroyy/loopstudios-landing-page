@@ -7,8 +7,7 @@ btn.addEventListener("click", () => {
     navBar.classList.toggle("show");
 });
 
-const windowSize = document.querySelector("window");
-if (windowSize > 1020) {
-    navBar.classList.remove("show");
-    console.log(navBar.classList);
-}
+// copyrights
+const copyright = document.querySelector(".copyright");
+const date = new Date().getFullYear();
+copyright.innerHTML = `<p style="text-align:center">ⓒ${date} Loopstudios. All rights reserved</p>`;
