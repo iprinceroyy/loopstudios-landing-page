@@ -211,10 +211,10 @@ div.title {
     border-bottom-color: white;
   }
   25% {
-    border-top-color: black;
+    border-top-color: #00ffaa;
   }
   50% {
-    border-right-color: black;
+    border-right-color: #00ffaa;
   }
   75% {
     border-bottom-color: #00ffaa;
