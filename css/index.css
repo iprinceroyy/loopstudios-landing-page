@@ -222,7 +222,7 @@ div.title {
 /* font family*/
 /* font weight */
 .main-container {
-  padding: 5rem 1.5rem;
+  padding: 5rem 1.5rem 0;
 }
 @media (min-width: 992px) {
   .main-container {
@@ -268,6 +268,7 @@ p {
 @media (min-width: 992px) {
   .about {
     flex-direction: row;
+    position: relative;
   }
 }
 
@@ -298,19 +299,18 @@ p {
 }
 
 .about div:nth-of-type(2) {
-  padding: 3.5rem 1.4rem;
+  padding: 3.5rem 1.4rem 0;
   text-align: center;
 }
 @media (min-width: 992px) {
   .about div:nth-of-type(2) {
-    position: relative;
-    z-index: 2;
+    background: white;
+    position: absolute;
     padding: 0;
-    flex-basis: 70%;
-    margin: 6rem 0 0;
-    padding: 4rem 3.5rem 0;
+    left: 36rem;
+    align-self: flex-end;
+    padding: 4rem 0 0 3.5rem;
     text-align: start;
-    overflow: visible;
   }
 }
 
