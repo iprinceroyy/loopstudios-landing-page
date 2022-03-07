@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/iprinceroyy/loopstudios-landing-page)
--   Live Site URL: [Add live site URL here](https://loopstudios-by-prince.netlify.app/)
+-   Solution URL: [Solution URL here](https://github.com/iprinceroyy/loopstudios-landing-page)
+-   Live Site URL: [Live site URL here](https://loopstudios-by-prince.netlify.app/)
 
 ## My process
 
