@@ -127,7 +127,7 @@ li {
   }
 }
 
-a {
+li > a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
@@ -138,7 +138,7 @@ a {
   cursor: pointer;
 }
 @media (min-width: 992px) {
-  a {
+  li > a {
     font-size: 1rem;
     color: white;
     font-family: "Alata", sans-serif;
@@ -147,7 +147,7 @@ a {
   }
 }
 
-a::before {
+li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -157,18 +157,18 @@ a::before {
   transition: all 0.3s;
 }
 @media (min-width: 992px) {
-  a::before {
+  li > a::before {
     content: none;
   }
 }
 
-a:hover::before,
-a.active::before {
+li > a:hover::before,
+li > a.active::before {
   height: 110%;
 }
 @media (min-width: 992px) {
-  a:hover::before,
-a.active::before {
+  li > a:hover::before,
+li > a.active::before {
     height: 0;
     border-bottom: 2px solid white;
   }
@@ -350,6 +350,26 @@ p {
 
 .creation span {
   display: block;
+}
+
+.creation + a {
+  font-size: 1rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: center;
+  border: 2px solid;
+  margin: 2.5rem 0;
+  padding: 1rem 4rem;
+}
+
+.creation + a:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
 }
 
 .attribution {

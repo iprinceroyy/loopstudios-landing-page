@@ -99,7 +99,7 @@ li {
     }
 }
 
-a {
+li>a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2rem;
@@ -117,7 +117,7 @@ a {
     }
 }
 
-a::before {
+li>a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -130,8 +130,8 @@ a::before {
     }
 }
 
-a:hover::before,
-a.active::before {
+li>a:hover::before,
+li>a.active::before {
     height: 110%;
     @media (min-width: 992px) {
         height: 0;

@@ -121,3 +121,23 @@ p {
 .creation span {
     display: block;
 }
+
+.creation+a {
+    font-size: 1rem;
+    font-family: $font-alata;
+    font-weight: $font-400;
+    color: black;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: center;
+    border: 2px solid;
+    margin: 2.5rem 0;
+    padding: 1rem 4rem;
+}
+
+.creation+a:hover {
+    background: $black;
+    color: $white;
+    text-decoration: none;
+}
