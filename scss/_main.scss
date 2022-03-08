@@ -99,13 +99,13 @@ p {
     position: relative;
 }
 
-.creation div:hover picture,
-.creation div:active picture {
+.creation picture:hover picture,
+.creation picture:active picture {
     opacity: 0.3;
 }
 
-.creation div:hover h3,
-.creation div:active h3 {
+.creation picture:hover h3,
+.creation picture:active h3 {
     color: black;
 }
 
