@@ -1,26 +1,6 @@
-/********************
-*   scss variables  *
-*********************/
-/* Primary colors */
-/* Global Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-/********************
-*   scss variables  *
-*********************/
-/* Primary colors */
-/* Global Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-/********************
-*   scss variables  *
-*********************/
-/* Primary colors */
-/* Global Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-/* font family*/
-/* font weight */
+
 .container {
   background: url("../assets/images/mobile/image-hero.jpg") no-repeat;
   background-size: cover;
